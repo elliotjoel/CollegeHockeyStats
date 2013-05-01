@@ -48,4 +48,7 @@ data <- data[data$loc == "@",]
 # Exclude games with missing scores
 data <- data[!is.na(data$host.score) & !is.na(data$visitor.score),]
 
-write.csv(data, sprintf("ncaa_hockey_scoreboard_%d_%d.csv", min(seasons), max(seasons)))
+write.csv(data, 
+          sprintf("ncaa_hockey_scoreboard_%d_%d.csv", 
+                  min(seasons), max(seasons)),
+          row.names = FALSE)

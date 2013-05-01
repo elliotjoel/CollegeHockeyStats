@@ -1,5 +1,6 @@
-data <- data.table(read.csv("c:/users/elliot/documents/data/ncaa_hockey.csv"),
-                   stringsAsFactors = FALSE)
+require(data.table)
+
+data <- data.table(ncaa.hockey.scoreboard.1999.2013)
 data$Date <- as.Date(data$Date, "%m/%d/%Y")
 data <- data[order(data$Date),]
 data$Team1[data$Team1 == "Quinnipiac College"] <- "Quinnipiac"
