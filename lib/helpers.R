@@ -1,4 +1,4 @@
-helper.function <- function()
-{
-  return(1)
+percentileRank <- function(x) {
+  result <- rank(x) / length(x)
+  return (result)
 }

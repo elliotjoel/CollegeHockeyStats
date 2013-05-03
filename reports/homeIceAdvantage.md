@@ -1,107 +1,4 @@
 
-```
-## Loading required package: ProjectTemplate
-```
-
-```
-## Loading required package: testthat
-```
-
-```
-## Loading project configuration
-```
-
-```
-## Autoloading helper functions
-```
-
-```
-## Running helper script: helpers.R
-```
-
-```
-## Autoloading packages
-```
-
-```
-## Loading package: reshape
-```
-
-```
-## Loading required package: plyr
-```
-
-```
-## Attaching package: 'reshape'
-```
-
-```
-## The following object is masked from 'package:plyr':
-## 
-## rename, round_any
-```
-
-```
-## Loading package: plyr
-```
-
-```
-## Loading package: ggplot2
-```
-
-```
-## Loading package: stringr
-```
-
-```
-## Loading package: lubridate
-```
-
-```
-## Attaching package: 'lubridate'
-```
-
-```
-## The following object is masked from 'package:reshape':
-## 
-## stamp
-```
-
-```
-## The following object is masked from 'package:plyr':
-## 
-## here
-```
-
-```
-## Autoloading data
-```
-
-```
-## Loading data set: ncaa.hockey.scoreboard.1999.2013
-```
-
-```
-## Munging data
-```
-
-```
-## Running preprocessing script: ncaa_hockey.R
-```
-
-```
-## Loading required package: data.table
-```
-
-```
-## Attaching package: 'data.table'
-```
-
-```
-## The following object is masked from 'package:lubridate':
-## 
-## hour, mday, month, quarter, wday, week, yday, year
-```
 
 
 Home Ice Advantage in College Hockey
@@ -125,31 +22,13 @@ Measuring Home Ice Advantage
 Does Home Ice Advantage Exist?
 ------------------------------
 
-The answer to this question is a resounding YES! Over the past fifteen seasons (1998-2013), 86.6% of team-seasons experienced a higher goal differential at home than on the road. Over the entire fifteen year period, every single team has had a positive aggregate goal differential advantage.
+The answer to this question is a resounding YES! Over the past fifteen seasons (1998-2013), 86.6% of team-seasons experienced a higher goal differential at home than on the road. Over the entire fifteen year period, every single team has had a positive aggregate goal differential advantage. The following histogram shows the distribution of team aggreagate advantage over the sample period.
 
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
 
-```r
-summary(cars)
-```
-
-```
-##      speed           dist    
-##  Min.   : 4.0   Min.   :  2  
-##  1st Qu.:12.0   1st Qu.: 26  
-##  Median :15.0   Median : 36  
-##  Mean   :15.4   Mean   : 43  
-##  3rd Qu.:19.0   3rd Qu.: 56  
-##  Max.   :25.0   Max.   :120
-```
-
-
-You can also embed plots, for example:
-
-
-```r
-plot(cars)
-```
 
 ![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
 
+
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
 
