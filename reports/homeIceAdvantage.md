@@ -27,8 +27,12 @@ The answer to this question is a resounding YES! Over the past fifteen seasons (
 ![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
 
 
+The following plot shows the distribution of goal differential advantage for each team over the sample period.
+
 ![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
 
+
+The following plot shows the correlation of team winning percentage and goal differential advantage by season.
 
 ![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
 

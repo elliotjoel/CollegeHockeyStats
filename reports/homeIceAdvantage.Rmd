@@ -36,16 +36,20 @@ print(ggplot(temp, aes(adv))
       + ggtitle("Histogram of Team Aggregate Goal Differential Advantage"))
 ```
 
+The following plot shows the distribution of goal differential advantage for each team over the sample period.
+
 ```{r echo=FALSE, fig.width=7, fig.height=6}
 temp <- agg.data[, list(m = median(goal.diff.adv)), by = list(team)]
 teams.sorted <- temp$team[order(-temp$m)]
 print(ggplot(agg.data, aes(factor(team, levels=teams.sorted), goal.diff.adv)) 
       + geom_boxplot(fill="lightblue") 
-      + theme(axis.text.x = element_text(angle=90))
+      + theme(axis.text.x = element_text(angle=90, hjust=1))
       + xlab("Team") + ylab("Goal Differential Advantage")
       + ggtitle("Boxplots of Team Goal Differential Advantage Across Seasons"))
 
 ```
+
+The following plot shows the correlation of team winning percentage and goal differential advantage by season.
 
 ```{r echo=FALSE, fig.width=7, fig.height=6}
 temp <- agg.data[, list(corr = cor(win.pct, goal.diff.adv)), by = list(season)]
